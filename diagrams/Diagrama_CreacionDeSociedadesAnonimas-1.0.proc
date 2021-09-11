@@ -8,7 +8,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_TYPzdBEDEeyrCJnFey_Gig" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_TYPzdREDEeyrCJnFey_Gig" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_TYPzdhEDEeyrCJnFey_Gig" name="Ingreso de información de sociedad anónima" outgoing="_LE6gYBMpEeyD6LYpCyY8Nw" incoming="_TYPzhxEDEeyrCJnFey_Gig" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_TYPzdhEDEeyrCJnFey_Gig" name="Registrar información de sociedad anónima" outgoing="_LE6gYBMpEeyD6LYpCyY8Nw" incoming="_TYPzhxEDEeyrCJnFey_Gig" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_TYPzdxEDEeyrCJnFey_Gig" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_TYPzeBEDEeyrCJnFey_Gig" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_TYPzeREDEeyrCJnFey_Gig" name="" content="" returnTypeFixed="true"/>
@@ -250,7 +250,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_TYPzqhEDEeyrCJnFey_Gig" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_TYPzqxEDEeyrCJnFey_Gig" type="3005" element="_TYPzdhEDEeyrCJnFey_Gig" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_TYPzrBEDEeyrCJnFey_Gig" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TYPzrREDEeyrCJnFey_Gig" x="175" y="60" width="139" height="69"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TYPzrREDEeyrCJnFey_Gig" x="175" y="60" width="140" height="70"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_TYPzrhEDEeyrCJnFey_Gig" type="3002" element="_TYPzchEDEeyrCJnFey_Gig" fontName=".AppleSystemUIFont">
               <children xmi:type="notation:DecorationNode" xmi:id="_TYPzrxEDEeyrCJnFey_Gig" type="5024">
