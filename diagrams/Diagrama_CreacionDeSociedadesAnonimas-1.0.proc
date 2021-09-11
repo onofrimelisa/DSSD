@@ -410,7 +410,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_K1eh8hNEEeysRqMPSB8vQg" type="5020">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_K1eh8xNEEeysRqMPSB8vQg" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1eh8RNEEeysRqMPSB8vQg" x="1543" y="100"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K1eh8RNEEeysRqMPSB8vQg" x="1522" y="92"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_goSuABNEEeysRqMPSB8vQg" type="3027" element="_goSG8BNEEeysRqMPSB8vQg" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_goSuAhNEEeysRqMPSB8vQg" type="5017"/>
