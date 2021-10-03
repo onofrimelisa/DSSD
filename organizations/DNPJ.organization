@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="DNPJ" description="Dirección Nacional de Personas Jurídicas">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="apoderado">
+      <firstName>apoderado</firstName>
+      <lastName>apoderado</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">apoderado</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mentradas">
+      <firstName>Mesa</firstName>
+      <lastName>Entradas</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">mentradas</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="legales">
+      <firstName>Area</firstName>
+      <lastName>Legales</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">legales</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Apoderado">
+      <displayName>Rol apoderado</displayName>
+    </role>
+    <role name="MesaDeEntradas">
+      <displayName>Rol Mesa de Entradas</displayName>
+    </role>
+    <role name="Legales">
+      <displayName>Rol Legales</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="MesaEntradas">
+      <displayName>Mesa de Entradas</displayName>
+    </group>
+    <group name="Legales">
+      <displayName>Area Legales</displayName>
+    </group>
+    <group name="Apoderado">
+      <displayName>Apoderado</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>apoderado</userName>
+      <roleName>Apoderado</roleName>
+      <groupName>Apoderado</groupName>
+    </membership>
+    <membership>
+      <userName>mentradas</userName>
+      <roleName>MesaDeEntradas</roleName>
+      <groupName>MesaEntradas</groupName>
+    </membership>
+    <membership>
+      <userName>legales</userName>
+      <roleName>Legales</roleName>
+      <groupName>Legales</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
