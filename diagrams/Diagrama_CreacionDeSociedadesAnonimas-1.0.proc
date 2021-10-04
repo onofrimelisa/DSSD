@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xmlns:transitions="http://www.bonitasoft.org/ns/studio/process/decision/transitions" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision http://www.bonitasoft.org/ns/studio/process/decision/transitions http://www.bonitasoft.org/ns/studio/process#//decision/transitions">
   <process:MainProcess xmi:id="_TYPMYBEDEeyrCJnFey_Gig" name="Diagrama_CreacionDeSociedadesAnonimas" author="monofri" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_TYPzcBEDEeyrCJnFey_Gig" name="Creación de sociedades anónimas" displayName="Creación de sociedades anónimas">
+    <elements xmi:type="process:Pool" xmi:id="_TYPzcBEDEeyrCJnFey_Gig" name="Poll_Create_SA" displayName="Creación de sociedades anónimas">
       <elements xmi:type="process:Lane" xmi:id="_eCUD4BM8EeysRqMPSB8vQg" name="Mesa de Entradas" actor="_-yHoUBNEEeysRqMPSB8vQg">
         <elements xmi:type="process:XORGateway" xmi:id="_kuuzMBMpEeyD6LYpCyY8Nw" documentation="Determina si la información ingresada por el apoderado en el registro de sociedad anónima es valida" name="¿La infomación es válida?" outgoing="_xV3S0BMpEeyD6LYpCyY8Nw _x6tsUBMpEeyD6LYpCyY8Nw" incoming="_iYBagBMpEeyD6LYpCyY8Nw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iX3pghMpEeyD6LYpCyY8Nw" name="¿La infomación es válida?" content="¿La infomación es válida?" returnTypeFixed="true"/>
@@ -38,7 +38,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_BgoSeBNEEeysRqMPSB8vQg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_BgoSdxNEEeysRqMPSB8vQg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Bgo5gRNEEeysRqMPSB8vQg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Kbb_wCSnEeydb8armSHO9A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R9N6oCVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Bgo5gBNEEeysRqMPSB8vQg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Bgo5gxNEEeysRqMPSB8vQg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -63,7 +63,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_LEqBthMpEeyD6LYpCyY8Nw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_LEqBtRMpEeyD6LYpCyY8Nw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_xCcMQhW1Eey3K_c3c_D4pg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Kbb_wSSnEeydb8armSHO9A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R9N6oSVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_xCcMQRW1Eey3K_c3c_D4pg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xCcMRBW1Eey3K_c3c_D4pg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -108,7 +108,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_dh2AACSTEeydb8armSHO9A" name="1 días: 00:00:00" content="86400000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_LUZz0x_gEeyW98pS-I5ZSg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Kbb_wiSnEeydb8armSHO9A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R9N6oiVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_LUZz0h_gEeyW98pS-I5ZSg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_LUZz1R_gEeyW98pS-I5ZSg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -140,7 +140,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_mBS5QBdFEeypj_zk8mSC2g" name="7 días: 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_eLdWoRMtEeyD6LYpCyY8Nw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Kbb_wySnEeydb8armSHO9A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_R9N6oyVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_eLdWoBMtEeyD6LYpCyY8Nw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_eLdWoxMtEeyD6LYpCyY8Nw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -193,7 +193,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZYLJASSgEeydb8armSHO9A" name="false" content="false" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_TYPzgxEDEeyrCJnFey_Gig">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Kbb_xCSnEeydb8armSHO9A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_R9N6pCVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_TYPzhREDEeyrCJnFey_Gig">
         <targetForm xmi:type="expression:Expression" xmi:id="_TYPzhhEDEeyrCJnFey_Gig" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
