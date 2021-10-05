@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xmlns:transitions="http://www.bonitasoft.org/ns/studio/process/decision/transitions" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision http://www.bonitasoft.org/ns/studio/process/decision/transitions http://www.bonitasoft.org/ns/studio/process#//decision/transitions">
   <process:MainProcess xmi:id="_TYPMYBEDEeyrCJnFey_Gig" name="Diagrama_CreacionDeSociedadesAnonimas" author="monofri" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_TYPzcBEDEeyrCJnFey_Gig" name="Poll_Create_SA" displayName="Creación de sociedades anónimas">
+    <elements xmi:type="process:Pool" xmi:id="_TYPzcBEDEeyrCJnFey_Gig" name="creacion_sociedad_anonima" displayName="">
       <elements xmi:type="process:Lane" xmi:id="_eCUD4BM8EeysRqMPSB8vQg" name="Mesa de Entradas" actor="_-yHoUBNEEeysRqMPSB8vQg">
         <elements xmi:type="process:XORGateway" xmi:id="_kuuzMBMpEeyD6LYpCyY8Nw" documentation="Determina si la información ingresada por el apoderado en el registro de sociedad anónima es valida" name="¿La infomación es válida?" outgoing="_xV3S0BMpEeyD6LYpCyY8Nw _x6tsUBMpEeyD6LYpCyY8Nw" incoming="_iYBagBMpEeyD6LYpCyY8Nw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iX3pghMpEeyD6LYpCyY8Nw" name="¿La infomación es válida?" content="¿La infomación es válida?" returnTypeFixed="true"/>
@@ -177,12 +177,6 @@
       <data xmi:type="process:Data" xmi:id="_6od7cCSUEeydb8armSHO9A" documentation="Fecha creación de Sociedad anónima" name="fecha_creacion" dataType="_TYPznBEDEeyrCJnFey_Gig">
         <defaultValue xmi:type="expression:Expression" xmi:id="_6od7cSSUEeydb8armSHO9A" name="2021/01/01 00:00:00" content="Calendar calendar = GregorianCalendar.getInstance();&#xA;calendar.set(2021, 0,1, 0, 0, 0);&#xA;calendar.getTime();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date" returnTypeFixed="true"/>
       </data>
-      <data xmi:type="process:Data" xmi:id="_Ckgk8CSVEeydb8armSHO9A" documentation="Domicilio legal de Sociedad anónima" name="domicilio_legal" dataType="_TYPzoBEDEeyrCJnFey_Gig">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_Ckgk8SSVEeydb8armSHO9A" content=""/>
-      </data>
-      <data xmi:type="process:Data" xmi:id="_FYjZ4CSVEeydb8armSHO9A" documentation="Domicilio real de Sociedad Anónima" name="domicilio_real" dataType="_TYPzoBEDEeyrCJnFey_Gig">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_FYjZ4SSVEeydb8armSHO9A" content=""/>
-      </data>
       <data xmi:type="process:Data" xmi:id="_lDJjYCSVEeydb8armSHO9A" documentation="Indica que el proceso está finalizado" name="proceso_finalizado" dataType="_TYPzmxEDEeyrCJnFey_Gig">
         <defaultValue xmi:type="expression:Expression" xmi:id="_lDJjYSSVEeydb8armSHO9A" name="false" content="false" returnType="java.lang.Boolean"/>
       </data>
@@ -191,6 +185,12 @@
       </data>
       <data xmi:type="process:Data" xmi:id="_ZYLJACSgEeydb8armSHO9A" name="tramite_valido" dataType="_TYPzmxEDEeyrCJnFey_Gig">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZYLJASSgEeydb8armSHO9A" name="false" content="false" returnType="java.lang.Boolean"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_QZmjACY2EeyVZJqq1Ko6NQ" name="status" dataType="_TYPzoBEDEeyrCJnFey_Gig">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_QZmjASY2EeyVZJqq1Ko6NQ" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_SDAJwCY2EeyVZJqq1Ko6NQ" name="email_apoderado" dataType="_TYPzoBEDEeyrCJnFey_Gig">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_SDAJwSY2EeyVZJqq1Ko6NQ" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_TYPzgxEDEeyrCJnFey_Gig">
         <targetForm xmi:type="expression:Expression" xmi:id="_R9N6pCVhEeyiNpgEfzQy8Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -317,11 +317,6 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_WelTeSSlEeydb8armSHO9A" id="OTHER"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_TYPzixEDEeyrCJnFey_Gig"/>
-      <documents xmi:type="process:Document" xmi:id="_2EWrgCSeEeydb8armSHO9A" documentation="Estatuto de la sociedad anónima" name="estatuto_sa">
-        <mimeType xmi:type="expression:Expression" xmi:id="_2EWrgSSeEeydb8armSHO9A" name="" content="" returnTypeFixed="true"/>
-        <url xmi:type="expression:Expression" xmi:id="_2EWrgiSeEeydb8armSHO9A" name="" content="" returnTypeFixed="true"/>
-        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_2EWrgySeEeydb8armSHO9A" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
-      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_TYPzjBEDEeyrCJnFey_Gig">
         <name xmi:type="expression:Expression" xmi:id="_TYPzjREDEeyrCJnFey_Gig" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_TYPzjhEDEeyrCJnFey_Gig" content="" returnTypeFixed="true"/>
