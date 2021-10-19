@@ -2,31 +2,58 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="DNPJ" description="Dirección Nacional de Personas Jurídicas">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="apoderado">
-      <firstName>apoderado</firstName>
-      <lastName>apoderado</lastName>
+    <user userName="diego.manzione">
+      <firstName>Diego</firstName>
+      <lastName>Manzione</lastName>
       <manager></manager>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">apoderado</password>
+      <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="mentradas">
-      <firstName>Mesa</firstName>
-      <lastName>Entradas</lastName>
+    <user userName="juan.perez">
+      <firstName>Juan</firstName>
+      <lastName>Perez</lastName>
       <manager></manager>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">mentradas</password>
+      <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="legales">
-      <firstName>Area</firstName>
-      <lastName>Legales</lastName>
+    <user userName="laura.montoya">
+      <firstName>Laura</firstName>
+      <lastName>Montoya</lastName>
       <manager></manager>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">legales</password>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jose.lopez">
+      <firstName>Jose</firstName>
+      <lastName>Lopez</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cecilia.sainz">
+      <firstName>Cecilia</firstName>
+      <lastName>Sainz</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="franco.milazzo">
+      <firstName>Franco</firstName>
+      <lastName>Milazzo</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
   </users>
@@ -54,19 +81,34 @@
   </groups>
   <memberships>
     <membership>
-      <userName>apoderado</userName>
+      <userName>diego.manzione</userName>
       <roleName>Apoderado</roleName>
       <groupName>Apoderado</groupName>
     </membership>
     <membership>
-      <userName>mentradas</userName>
+      <userName>juan.perez</userName>
       <roleName>MesaDeEntradas</roleName>
       <groupName>MesaEntradas</groupName>
     </membership>
     <membership>
-      <userName>legales</userName>
+      <userName>laura.montoya</userName>
       <roleName>Legales</roleName>
       <groupName>Legales</groupName>
+    </membership>
+    <membership>
+      <userName>jose.lopez</userName>
+      <roleName>MesaDeEntradas</roleName>
+      <groupName>MesaEntradas</groupName>
+    </membership>
+    <membership>
+      <userName>cecilia.sainz</userName>
+      <roleName>Legales</roleName>
+      <groupName>Legales</groupName>
+    </membership>
+    <membership>
+      <userName>franco.milazzo</userName>
+      <roleName>Apoderado</roleName>
+      <groupName>Apoderado</groupName>
     </membership>
   </memberships>
 </organization:Organization>
