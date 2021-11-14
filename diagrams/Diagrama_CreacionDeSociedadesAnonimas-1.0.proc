@@ -274,10 +274,10 @@
           <operator xmi:type="expression:Operator" xmi:id="_-MQtmzKtEeydrvvq0iStlg" type="ASSIGNMENT"/>
         </outputs>
       </connectors>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_TYPzgxEDEeyrCJnFey_Gig">
-        <targetForm xmi:type="expression:Expression" xmi:id="_VNe7ZDKwEeydrvvq0iStlg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_TYPzgxEDEeyrCJnFey_Gig" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_yaRygEWEEeyFLNlhxGvNsA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_TYPzhREDEeyrCJnFey_Gig">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_TYPzhREDEeyrCJnFey_Gig" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_TYPzhhEDEeyrCJnFey_Gig" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_iYBagBMpEeyD6LYpCyY8Nw" target="_kuuzMBMpEeyD6LYpCyY8Nw" source="_xCblMBW1Eey3K_c3c_D4pg">
