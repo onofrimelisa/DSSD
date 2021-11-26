@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="DNPJ" description="Dirección Nacional de Personas Jurídicas">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="diego.manzione">
+      <firstName>Diego</firstName>
+      <lastName>Manzione</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="juan.perez">
+      <firstName>Juan</firstName>
+      <lastName>Perez</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="laura.montoya">
+      <firstName>Laura</firstName>
+      <lastName>Montoya</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jose.lopez">
+      <firstName>Jose</firstName>
+      <lastName>Lopez</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cecilia.sainz">
+      <firstName>Cecilia</firstName>
+      <lastName>Sainz</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="franco.milazzo">
+      <firstName>Franco</firstName>
+      <lastName>Milazzo</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Apoderado">
+      <displayName>Rol apoderado</displayName>
+    </role>
+    <role name="MesaDeEntradas">
+      <displayName>Rol Mesa de Entradas</displayName>
+    </role>
+    <role name="Legales">
+      <displayName>Rol Legales</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="MesaEntradas">
+      <displayName>Mesa de Entradas</displayName>
+    </group>
+    <group name="Legales">
+      <displayName>Area Legales</displayName>
+    </group>
+    <group name="Apoderado">
+      <displayName>Apoderado</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>diego.manzione</userName>
+      <roleName>Apoderado</roleName>
+      <groupName>Apoderado</groupName>
+    </membership>
+    <membership>
+      <userName>juan.perez</userName>
+      <roleName>MesaDeEntradas</roleName>
+      <groupName>MesaEntradas</groupName>
+    </membership>
+    <membership>
+      <userName>laura.montoya</userName>
+      <roleName>Legales</roleName>
+      <groupName>Legales</groupName>
+    </membership>
+    <membership>
+      <userName>jose.lopez</userName>
+      <roleName>MesaDeEntradas</roleName>
+      <groupName>MesaEntradas</groupName>
+    </membership>
+    <membership>
+      <userName>cecilia.sainz</userName>
+      <roleName>Legales</roleName>
+      <groupName>Legales</groupName>
+    </membership>
+    <membership>
+      <userName>franco.milazzo</userName>
+      <roleName>Apoderado</roleName>
+      <groupName>Apoderado</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
