@@ -56,6 +56,26 @@
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
+    <user userName="mario.santos">
+      <firstName>Mario</firstName>
+      <lastName>Santos</lastName>
+      <jobTitle>Gerente General</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="emilio.ravenna">
+      <firstName>Emilio</firstName>
+      <lastName>Ravenna</lastName>
+      <jobTitle>Sub Gerente General</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">1234</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Apoderado">
@@ -67,6 +87,9 @@
     <role name="Legales">
       <displayName>Rol Legales</displayName>
     </role>
+    <role name="Gerencia">
+      <displayName>Rol Gerencia</displayName>
+    </role>
   </roles>
   <groups>
     <group name="MesaEntradas">
@@ -77,6 +100,9 @@
     </group>
     <group name="Apoderado">
       <displayName>Apoderado</displayName>
+    </group>
+    <group name="Gerencia">
+      <displayName>Gerencia</displayName>
     </group>
   </groups>
   <memberships>
@@ -109,6 +135,16 @@
       <userName>franco.milazzo</userName>
       <roleName>Apoderado</roleName>
       <groupName>Apoderado</groupName>
+    </membership>
+    <membership>
+      <userName>mario.santos</userName>
+      <roleName>Gerencia</roleName>
+      <groupName>Gerencia</groupName>
+    </membership>
+    <membership>
+      <userName>emilio.ravenna</userName>
+      <roleName>Gerencia</roleName>
+      <groupName>Gerencia</groupName>
     </membership>
   </memberships>
 </organization:Organization>
